@@ -24,6 +24,7 @@ body {
 
 .header-content{
     display: flex;
+    justify-content: space-between;
 }
 
 .conteiner{
@@ -79,8 +80,8 @@ img{
 
 .logo{
 
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-right: 93px;
     /* margin-left: 215px; */
 
@@ -117,9 +118,9 @@ img{
     margin-left: 50px;
 }
 
-.contacts .item:first-child{
-    margin-left: 344px;
-}
+/* .contacts .item:first-child{
+    margin-left: auto;
+} */
 
 /* Навигация */
 
@@ -147,7 +148,8 @@ img{
 .solutions{
     background-color: var(--solutions-bg-color);
     text-align: center;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .solutions-title{
@@ -155,7 +157,9 @@ img{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
 
     /* Геометрия */
@@ -164,12 +168,18 @@ img{
 }
 
 .primary-button{
+
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
     background-color: var(--accent-color);
     color: var(--white-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+
 
     /* Геометрия */
 
@@ -221,6 +231,10 @@ img{
 
 /* Чим ми займаємося */
 
+.services{
+    padding-bottom: 94px;
+}
+
 .services-title{
 
     margin-bottom: 50px;
@@ -246,9 +260,8 @@ img{
 
 .team {
     background-color: var(--button-color);
-    margin-top: 94px;
     padding-bottom: 94px;
-    height: 648px;
+    padding-top: 94px;
 
 }
 
@@ -275,9 +288,7 @@ img{
 }
 
 .team-title{
-
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     color: var(--main-color);
     font-weight: 700;
@@ -311,7 +322,6 @@ img{
 /* Футер */
 .page-footer{
     background-color: var(--solutions-bg-color);
-    /* height: 252px; */
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -340,7 +350,7 @@ img{
     line-height: 1.19;
 }
 
-.footer-list .item:not(last-child){
+.footer-list .item:not(:last-child){
     margin-bottom: 9px;
 }
 
@@ -348,6 +358,7 @@ img{
 
 .projects{
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .buttons-list{
@@ -358,6 +369,9 @@ img{
 }
 
 .project-title{
+
+    margin-bottom: 4px;
+
     color: var(--main-color);
         font-weight: 700;
         font-size: 18px;
@@ -436,9 +450,24 @@ img{
     color: var(--secondary-color);
 }
 
-.box{
-    padding: 200px 462px;
+/* Скрытые объекты */
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
+
+/* .box{
+    padding: 462px;
+} */
 
 /* section{
     outline: solid 2px tomato;
